@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./master.css">
+
+  <!-- Main Js file -->
+  <script src="./main.js" charset="utf-8"></script>
+
+  <title>Frontend Mentor | Time Tracking Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="report">
+      <div class="report__header">
+        <img src="./images/imageavatar.jpg.jpg" alt="">
+        <div>
+          <div>Report for</div>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="report__buttons">
+        <button data-period="daily" class="button">Daily</button>
+        <button data-period="weekly" class="button">Weekly</button>
+        <button data-period="monthly" class="button">Monthly</button>
+      </div>
+    </div>
+
+    <div class="work element">
+      <div class="element__container">
+        <b>Work</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div  data-activity="Work" class="current element__time">5hrs</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Work">7hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="play element">
+      <div class="element__container">
+        <b>Play</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div  data-activity="Play" class="current element__time">1hr</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Play">2hrs</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="study element">
+      <div class="element__container">
+        <b>Study</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div  data-activity="Study" class="current element__time">0hrs</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Study">1hr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise element">
+      <div class="element__container">
+        <b>Exercise</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div data-activity="Exercise" class="current element__time">1hr</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Exercise">1hr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="social element">
+      <div class="element__container">
+        <b>Social</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div  data-activity="Social" class="current element__time">1hr</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Social">3hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="selfcare element">
+      <div class="element__container">
+        <b>Self Care</b>
+        <img src="./images/icon-ellipsis.svg" alt="">
+        <div  data-activity="Self Care" class="current element__time">0hrs</div>
+        <div class="element__prev-time">
+          <span>Previous</span>-<span class="previous" data-activity="Self Care">1hr</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/williamclay8">williamclay.eth</a>.
+  </div>
+</body>
+</html>
